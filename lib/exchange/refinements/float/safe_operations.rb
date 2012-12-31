@@ -2,7 +2,7 @@ module Exchange
   
   # Make Floating Points forget about their incapabilities when dealing with money
   #
-  module ErrorSafe
+  module SafeOperations
     
     refine Float do
       
