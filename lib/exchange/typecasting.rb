@@ -44,8 +44,7 @@ module Exchange
   # @since 0.9.0
   # @version 0.9.0
   #
-  module Typecasting
-    
+  module Typecasting    
     # Installs a money getter
     # @!macro [attach] install_money_getter
     #   @method $1
@@ -127,8 +126,7 @@ module Exchange
     # @example configure money with a proc, the proc will be called with the object as an argument. This is equivalent to the example above
     #   money :price, :currency => lambda {|o| o.currency}, :time => lambda{|o| o.created_at}
     #
-    def money *attributes
-      
+    def money *attributes      
       options = attributes.last.is_a?(Hash) ? attributes.pop : {}
       
       attributes.each do |attribute|

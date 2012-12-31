@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe "Exchange::Cachify" do
+  using Exchange::Cachify
   
   describe "cachify" do
     subject { :blu }

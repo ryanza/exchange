@@ -2,6 +2,8 @@ require 'spec_helper'
 require 'redis'
 
 describe "Exchange::Cache::Redis" do
+  using Exchange::Cachify
+  using Exchange::Decachify
   subject { Exchange::Cache::Redis.instance }
   before(:each) do
     Exchange.configuration = Exchange::Configuration.new do |c|

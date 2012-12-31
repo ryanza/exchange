@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe "Exchange::Typecasting" do
+  using Exchange::Conversability
   
   class Manager
     

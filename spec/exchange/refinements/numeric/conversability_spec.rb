@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "Exchange::Conversability" do
+  using Exchange::Conversability
+  
   before(:all) do
     Exchange.configuration = Exchange::Configuration.new { |c| c.cache = { :subclass => :no_cache } }
   end

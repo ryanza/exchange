@@ -12,7 +12,7 @@ module Exchange
       # The base of the Xaviermedia API URL
       API_URL              = "api.finance.xaviermedia.com/api"
       # The currencies the Xaviermedia API URL can handle
-      CURRENCIES           = [:eur, :usd, :jpy, :gbp, :cyp, :czk, :dkk, :eek, :huf, :ltl, :mtl, :pln, :sek, :sit, :skk, :chf, :isk, :nok, :bgn, :hrk, :rol, :ron, :rub, :trl, :aud, :cad, :cny, :hkd, :idr, :krw, :myr, :nzd, :php, :sgd, :thb, :zar]
+      CURRENCIES           = %i(eur usd jpy gbp cyp czk dkk eek huf ltl mtl pln sek sit skk chf isk nok bgn hrk rol ron rub trl aud cad cny hkd idr krw myr nzd php sgd thb zar)
       
       # Updates the rates by getting the information from Xaviermedia API for today or a defined historical date
       # The call gets cached for a maximum of 24 hours.

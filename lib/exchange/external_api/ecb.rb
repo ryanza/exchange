@@ -15,7 +15,7 @@ module Exchange
       
       # The currencies the ECB API URL can handle
       #
-      CURRENCIES           = [:eur, :usd, :jpy, :bgn, :czk, :dkk, :gbp, :huf, :ltl, :lvl, :pln, :ron, :sek, :chf, :nok, :hrk, :rub, :try, :aud, :brl, :cad, :cny, :hkd, :idr, :ils, :inr, :krw, :mxn, :myr, :nzd, :php, :sgd, :thb, :zar] 
+      CURRENCIES           = %i(eur usd jpy bgn czk dkk gbp huf ltl lvl pln ron sek chf nok hrk rub try aud brl cad cny hkd idr ils inr krw mxn myr nzd php sgd thb zar)
       
       # The result of the api call to the Central bank
       attr_accessor :callresult

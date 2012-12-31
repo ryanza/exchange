@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "Exchange::CacheDalli::Client" do
+  using Exchange::Cachify
+  using Exchange::Decachify
   subject { Exchange::Cache::Memcached.instance }
   before(:each) do
     Exchange.configuration = Exchange::Configuration.new { |c|

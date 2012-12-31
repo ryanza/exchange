@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "Exchange::Cache::File" do
+  using Exchange::Cachify
+  using Exchange::Decachify
   subject { Exchange::Cache::File.instance }
   before(:each) do
     Exchange.configuration = Exchange::Configuration.new { |c|

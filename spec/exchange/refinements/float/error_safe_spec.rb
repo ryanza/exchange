@@ -1,6 +1,9 @@
 require 'spec_helper'
 
 describe "Exchange::ErrorSafe" do
+  using Exchange::Conversability
+  using Exchange::ErrorSafe
+  
   before(:all) do
     Exchange.configuration = Exchange::Configuration.new { |c| c.cache = { :subclass => :no_cache } }
   end

@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "Exchange::Cache::Memory" do
+  using Exchange::Cachify
+  using Exchange::Decachify
   subject { Exchange::Cache::Memory.instance }
   before(:each) do
     Exchange.configuration = Exchange::Configuration.new { |c|

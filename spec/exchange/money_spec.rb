@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "Exchange::Money" do
+  using Exchange::Conversability
+  
   subject { Exchange::Money.new(40, :usd) }
   before(:all) do
     Exchange.configuration = Exchange::Configuration.new do |c|

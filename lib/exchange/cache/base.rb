@@ -27,6 +27,8 @@ module Exchange
   #   # Have fun, and don't forget to write tests.
   
   module Cache
+    using Exchange::Cachify
+    using Exchange::Decachify
     
     # The base Class for all Caching operations. Essentially generates a helper function for all cache classes to generate a key
     # @author Beat Richartz

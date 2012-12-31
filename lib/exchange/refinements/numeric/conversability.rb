@@ -28,11 +28,12 @@ module Exchange
     # @since 0.1
     # @version 0.10
     #
-    def in currency, options={}
-      Money.new(self, currency, options)
-    end    
+    
+    refine Numeric do
+      def in currency, options={}
+        Money.new(self, currency, options)
+      end
+    end
+     
   end
 end
-
-# include the Conversability methods in all number operations. Stack traces will indicate the module if something goes wrong.
-Numeric.send :include, Exchange::Conversability
